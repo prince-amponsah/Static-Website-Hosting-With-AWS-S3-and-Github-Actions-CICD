@@ -1,11 +1,15 @@
-name: python-linting-code
+name: Lint
 on: push
 
 jobs:
- python-linting-code:
-   runs-on: ubuntu-latest
+  build:
+    name: Lint
+    runs-on: ubuntu-latest
    
-   steps:
-    - name: Super-Linter
-      uses: super-linter/super-linter@v7.1.0
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Super-Linter
+        uses: super-linter/super-linter@v7.1.0
             
