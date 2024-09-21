@@ -1,4 +1,4 @@
-name: Linter Python Workflow
+name: python-linting-code
 on: push
 
 jobs:
